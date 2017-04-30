@@ -1,0 +1,13 @@
+{
+    "name": "Teste Valemobi",
+    "description": "Teste para vaga de estágio",
+    "authors": [
+        {
+            "name": "Giovanni Gualiato",
+            "email": "ggualiato@bol.com.br ou ggualiato@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.2"
+    }
+}
