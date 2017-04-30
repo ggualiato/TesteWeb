@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Cadastrar Produto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script href="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="validacadastrarproduto.js"></script>
+  	<style type="text/css">
+  		body{
+  			background: #F4A460;
+  		}
+  	</style>
+</head>
+
+<body>
+
+	<div class="jumbotron text-center">
+	  	<h1>Teste Valemobi</h1>
+	</div>
+
+
+    <div class="container">
+
+
+	<form name="formCadastrarProduto" method="POST" onsubmit="return validaFormCadastrarProduto(this)" action="cadastrarproduto.php">
+
+		<div class="container" >
+
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Faça uma negociação!</h2>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Nome da mercadoria:</h3>
+					<input type="text" name="nomeProd" id="nomeProd" class="form-control" placeholder="Digite o nome do produto">	
+				</div>		
+			</div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<h3>Tipo da mercadoria:</h3>
+					<select class="form-control" name="cbbTipo" >
+						<option value="Livros">Livros</option>
+						<option value="Eletrodomesticos">Eletrodomesticos</option>
+						<option value="Celulares">Celulares</option>
+						<option value="Games">Games</option>	
+						<option value="Outros">Outros</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<h3>Tipo de negócio:</h3>
+					<select class="form-control" name="cbbNegoc">
+						<option value="Comprar">Comprar</option>
+						<option value="Vender">Vender</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<h3>Quantidade:</h3>
+					<input type="number" name="qtdProd" id="qtdProd" class="form-control" id="qtdProd">
+				</div>
+				<div class="col-md-3">
+					<h3>Preço:</h3>
+					<input type="decimal" name="precoProd" class="form-control">
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-md-2">
+					<button type="submit" class="btn btn-default" name="cadastrarProd">Finalizar operação</button>
+				</div>
+
+				<div class="col-md-4">
+					<button type="button" class="btn btn-default" value="Histórico de negociação" onclick='javascript: location.href="historicoprodutos.php";' name="historicoNeg" id="btnNegociar">Histórico de Negociações</button>
+				</div>
+
+				<div class="col-md-2">
+					<a href="menu.php"><img src="imagens/voltar.png" class="img-rounded" alt="Cinque Terre" width="30px" height="30px" "></a>
+					<p>Voltar</p>
+				</div>
+
+			</div>
+
+			<br>
+		</div>
+	</form>
+
+	</div>
+</body>
+</html>

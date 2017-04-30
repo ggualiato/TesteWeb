@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Teste Valemobi - Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script href="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="validarLogin.js"></script>
+  	<style type="text/css">
+  		body{
+  			background: #F4A460;
+  		}
+  	</style>
+</head>
+
+<body>
+
+	<div class="jumbotron text-center">
+	 	<h1>Teste Valemobi</h1>
+	</div>
+
+	<div class="container" >
+	  	<h2>Acesse sua conta</h2>
+
+	  	<hr>
+
+	  	<form name="loginForm" method="POST" onsubmit="return validarLogin(this)" action="logar.php">
+
+	    	<div class="form-group">
+	      		<label for="txtLogin">Usuário:</label>
+	      		<input type="text" name="txtLogin" class="form-control" id="txtLogin" placeholder="Digite seu usuário">
+	    	</div>
+
+	    	<div class="form-group">
+	      		<label for="txtSenha">Senha:</label>
+	      		<input type="password" name="txtSenha" class="form-control" id="txtSenha" placeholder="Digite sua senha">
+	      	</div>
+
+	      	<hr>
+	      	
+	    	<button type="submit" class="btn btn-default" name="btnEntrar" id="btnEntrar"">Entrar</button>
+	    	<a href="cadastrousuario.html">Cadastre-se</a>
+
+	  	</form>
+	</div>
+</body>
+</html>
